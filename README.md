@@ -66,6 +66,16 @@ Use up-casting ex. `uint256 total = uint256(amount) + amoun2`
 
 - [ ] Create post Setup tests if needed
 
-- [ ] prefix with "I" when calling interfaces, ex. `IExample`
+- [ ] Prefix with "I" when calling interfaces, ex. `IExample`
 
-- [ ] prefix argument variables with "_" where needed
+- [ ] Prefix argument variables with "_" where needed
+
+- [ ] Use Interface over others. Among others use `abi.encodeWithSelector()` above the rest.
+
+- [ ] Use `abi.encodePacked` if you don't know the sig/calldata until runtime. You can also use `abi.encodeWithSignature`
+
+- [ ] Use 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE to represent Ether
+
+- [ ] Original commenter resolves the comments on Github!
+
+- [ ] verify the `msg.value == accumulator` to avoid excess ETH getting stuck
